@@ -137,63 +137,62 @@ public class RealSnake extends JPanel implements KeyListener {
 		super.paint(g);
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-		g2d.fillRect(head.getX(), head.getY(), 10, 10);
-		g2d.fillRect(tail1.getX(), tail1.getY(), 10, 10);
-		g2d.fillRect(tail2.getX(), tail2.getY(), 10, 10);
-		g2d.fillRect(tail3.getX(), tail3.getY(), 10, 10);
-		g2d.fillRect(tail4.getX(), tail4.getY(), 10, 10);
-		g2d.fillRect(tail5.getX(), tail5.getY(), 10, 10);
-		g2d.fillRect(tail6.getX(), tail6.getY(), 10, 10);
-		g2d.fillRect(tail7.getX(), tail7.getY(), 10, 10);
-		g2d.fillRect(tail8.getX(), tail8.getY(), 10, 10);
-		g2d.fillRect(tail9.getX(), tail9.getY(), 10, 10);
-		g2d.fillRect(tail10.getX(), tail10.getY(), 10, 10);
-		g2d.fillRect(tail11.getX(), tail11.getY(), 10, 10);
-		g2d.fillRect(tail12.getX(), tail12.getY(), 10, 10);
-		g2d.fillRect(tail13.getX(), tail13.getY(), 10, 10);
-		g2d.fillRect(tail14.getX(), tail14.getY(), 10, 10);
-		g2d.fillRect(tail15.getX(), tail15.getY(), 10, 10);
-		g2d.fillRect(tail16.getX(), tail16.getY(), 10, 10);
-		g2d.fillRect(tail17.getX(), tail17.getY(), 10, 10);
-		g2d.fillRect(tail18.getX(), tail18.getY(), 10, 10);
-		g2d.fillRect(tail19.getX(), tail19.getY(), 10, 10);
-		g2d.fillRect(tail20.getX(), tail20.getY(), 10, 10);
-		g2d.fillRect(tail21.getX(), tail21.getY(), 10, 10);
-		g2d.fillRect(tail22.getX(), tail22.getY(), 10, 10);
-		g2d.fillRect(tail23.getX(), tail23.getY(), 10, 10);
-		g2d.fillRect(tail24.getX(), tail24.getY(), 10, 10);
-		g2d.fillRect(tail25.getX(), tail25.getY(), 10, 10);
-		g2d.fillRect(tail26.getX(), tail26.getY(), 10, 10);
-		g2d.fillRect(tail27.getX(), tail27.getY(), 10, 10);
-		g2d.fillRect(tail28.getX(), tail28.getY(), 10, 10);
-		g2d.fillRect(tail29.getX(), tail29.getY(), 10, 10);
-		g2d.fillRect(tail30.getX(), tail30.getY(), 10, 10);
-		g2d.fillRect(tail31.getX(), tail31.getY(), 10, 10);
-		g2d.fillRect(tail32.getX(), tail32.getY(), 10, 10);
-		g2d.fillRect(tail33.getX(), tail33.getY(), 10, 10);
-		g2d.fillRect(tail34.getX(), tail34.getY(), 10, 10);
-		g2d.fillRect(tail35.getX(), tail35.getY(), 10, 10);
-		g2d.fillRect(tail36.getX(), tail36.getY(), 10, 10);
-		g2d.fillRect(tail37.getX(), tail37.getY(), 10, 10);
-		g2d.fillRect(tail38.getX(), tail38.getY(), 10, 10);
-		g2d.fillRect(tail39.getX(), tail39.getY(), 10, 10);
-		g2d.fillRect(tail40.getX(), tail40.getY(), 10, 10);
-		g2d.fillRect(tail41.getX(), tail41.getY(), 10, 10);
-		g2d.fillRect(tail42.getX(), tail42.getY(), 10, 10);
-		g2d.fillRect(tail43.getX(), tail43.getY(), 10, 10);
-		g2d.fillRect(tail44.getX(), tail44.getY(), 10, 10);
-		g2d.fillRect(tail45.getX(), tail45.getY(), 10, 10);
-		g2d.fillRect(tail46.getX(), tail46.getY(), 10, 10);
-		g2d.fillRect(tail47.getX(), tail47.getY(), 10, 10);
-		g2d.fillRect(tail48.getX(), tail48.getY(), 10, 10);
-		g2d.fillRect(tail49.getX(), tail49.getY(), 10, 10);
-		g2d.fillRect(tail50.getX(), tail50.getY(), 10, 10);
-		g2d.drawRect(fruit.x, fruit.y, 10, 10);
+		g2d.drawRect(head.getX(), head.getY(), 10, 10);
+		g2d.drawRect(tail1.getX(), tail1.getY(), 10, 10);
+		g2d.drawRect(tail2.getX(), tail2.getY(), 10, 10);
+		g2d.drawRect(tail3.getX(), tail3.getY(), 10, 10);
+		g2d.drawRect(tail4.getX(), tail4.getY(), 10, 10);
+		g2d.drawRect(tail5.getX(), tail5.getY(), 10, 10);
+		g2d.drawRect(tail6.getX(), tail6.getY(), 10, 10);
+		g2d.drawRect(tail7.getX(), tail7.getY(), 10, 10);
+		g2d.drawRect(tail8.getX(), tail8.getY(), 10, 10);
+		g2d.drawRect(tail9.getX(), tail9.getY(), 10, 10);
+		g2d.drawRect(tail10.getX(), tail10.getY(), 10, 10);
+		g2d.drawRect(tail11.getX(), tail11.getY(), 10, 10);
+		g2d.drawRect(tail12.getX(), tail12.getY(), 10, 10);
+		g2d.drawRect(tail13.getX(), tail13.getY(), 10, 10);
+		g2d.drawRect(tail14.getX(), tail14.getY(), 10, 10);
+		g2d.drawRect(tail15.getX(), tail15.getY(), 10, 10);
+		g2d.drawRect(tail16.getX(), tail16.getY(), 10, 10);
+		g2d.drawRect(tail17.getX(), tail17.getY(), 10, 10);
+		g2d.drawRect(tail18.getX(), tail18.getY(), 10, 10);
+		g2d.drawRect(tail19.getX(), tail19.getY(), 10, 10);
+		g2d.drawRect(tail20.getX(), tail20.getY(), 10, 10);
+		g2d.drawRect(tail21.getX(), tail21.getY(), 10, 10);
+		g2d.drawRect(tail22.getX(), tail22.getY(), 10, 10);
+		g2d.drawRect(tail23.getX(), tail23.getY(), 10, 10);
+		g2d.drawRect(tail24.getX(), tail24.getY(), 10, 10);
+		g2d.drawRect(tail25.getX(), tail25.getY(), 10, 10);
+		g2d.drawRect(tail26.getX(), tail26.getY(), 10, 10);
+		g2d.drawRect(tail27.getX(), tail27.getY(), 10, 10);
+		g2d.drawRect(tail28.getX(), tail28.getY(), 10, 10);
+		g2d.drawRect(tail29.getX(), tail29.getY(), 10, 10);
+		g2d.drawRect(tail30.getX(), tail30.getY(), 10, 10);
+		g2d.drawRect(tail31.getX(), tail31.getY(), 10, 10);
+		g2d.drawRect(tail32.getX(), tail32.getY(), 10, 10);
+		g2d.drawRect(tail33.getX(), tail33.getY(), 10, 10);
+		g2d.drawRect(tail34.getX(), tail34.getY(), 10, 10);
+		g2d.drawRect(tail35.getX(), tail35.getY(), 10, 10);
+		g2d.drawRect(tail36.getX(), tail36.getY(), 10, 10);
+		g2d.drawRect(tail37.getX(), tail37.getY(), 10, 10);
+		g2d.drawRect(tail38.getX(), tail38.getY(), 10, 10);
+		g2d.drawRect(tail39.getX(), tail39.getY(), 10, 10);
+		g2d.drawRect(tail40.getX(), tail40.getY(), 10, 10);
+		g2d.drawRect(tail41.getX(), tail41.getY(), 10, 10);
+		g2d.drawRect(tail42.getX(), tail42.getY(), 10, 10);
+		g2d.drawRect(tail43.getX(), tail43.getY(), 10, 10);
+		g2d.drawRect(tail44.getX(), tail44.getY(), 10, 10);
+		g2d.drawRect(tail45.getX(), tail45.getY(), 10, 10);
+		g2d.drawRect(tail46.getX(), tail46.getY(), 10, 10);
+		g2d.drawRect(tail47.getX(), tail47.getY(), 10, 10);
+		g2d.drawRect(tail48.getX(), tail48.getY(), 10, 10);
+		g2d.drawRect(tail49.getX(), tail49.getY(), 10, 10);
+		g2d.drawRect(tail50.getX(), tail50.getY(), 10, 10);
+		g2d.fillRect(fruit.x, fruit.y, 10, 10);
 	}
 
 	public void keyTyped(KeyEvent e) {
 		c = e.getKeyChar();
-
 	}
 
 	public void keyPressed(KeyEvent e) {
@@ -259,16 +258,15 @@ public class RealSnake extends JPanel implements KeyListener {
 		
 	}
 
-	public static void eatFruit() {
-		spawnFruit();
+	public void eatFruit() {
+		this.spawnFruit();
 		tail.add(dump.get(0));
 		dump.remove(0);
 		
 	}
 
-	public static void spawnFruit() {
+	public void spawnFruit() {
 		Random rn = new Random();
-		boolean validFruit = false;
 		int fX = 10*(rn.nextInt(17));
 		int fY = 10*(rn.nextInt(15));
 		fruit.x = fX;
@@ -311,7 +309,7 @@ public class RealSnake extends JPanel implements KeyListener {
 					result.setSize(100,100);
 					result.setLocation(50,50);
 					result.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-					result.setVisible(true);	
+					result.setVisible(true);
 				}
 		}
 	}
