@@ -1,5 +1,3 @@
-package com.fdm.games;
-
 import java.awt.Point;
 
 public class Block {
