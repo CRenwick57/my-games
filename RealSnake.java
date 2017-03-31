@@ -245,30 +245,30 @@ public class RealSnake extends JPanel implements KeyListener {
 		if (head.getX() == fruit.x && head.getY() == fruit.y) {
 			eatFruit();
 		}
-		
-		if (head.getX() > 170 || head.getX() < 0 ||head.getY() > 150 || head.getY() < 0){
+
+		if (head.getX() > 170 || head.getX() < 0 || head.getY() > 150 || head.getY() < 0) {
 			kill = true;
 		}
-		
-		for (Block b : tail){
-			if (head.getX() == b.getX() && head.getY() == b.getY()){
+
+		for (Block b : tail) {
+			if (head.getX() == b.getX() && head.getY() == b.getY()) {
 				kill = true;
 			}
 		}
-		
+
 	}
 
 	public void eatFruit() {
 		this.spawnFruit();
 		tail.add(dump.get(0));
 		dump.remove(0);
-		
+
 	}
 
 	public void spawnFruit() {
 		Random rn = new Random();
-		int fX = 10*(rn.nextInt(17));
-		int fY = 10*(rn.nextInt(15));
+		int fX = 10 * (rn.nextInt(17));
+		int fY = 10 * (rn.nextInt(15));
 		fruit.x = fX;
 		fruit.y = fY;
 	}
@@ -291,26 +291,26 @@ public class RealSnake extends JPanel implements KeyListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		while (true) {
-				if (dump.size() > 0) {
-					game.moveSnake(c);
-					game.repaint();
-					Thread.sleep(100);
-				} else {
-					frame.dispose();
-					result.add(win);
-					result.setSize(100,100);
-					result.setLocation(50,50);
-					result.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-					result.setVisible(true);				
+			if (dump.size() > 0) {
+				game.moveSnake(c);
+				game.repaint();
+				Thread.sleep(100);
+			} else {
+				frame.dispose();
+				result.add(win);
+				result.setSize(100, 100);
+				result.setLocation(50, 50);
+				result.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				result.setVisible(true);
 			}
-				if(kill){
-					frame.dispose();
-					result.add(loss);
-					result.setSize(100,100);
-					result.setLocation(50,50);
-					result.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-					result.setVisible(true);
-				}
+			if (kill) {
+				frame.dispose();
+				result.add(loss);
+				result.setSize(100, 100);
+				result.setLocation(50, 50);
+				result.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				result.setVisible(true);
+			}
 		}
 	}
 }
